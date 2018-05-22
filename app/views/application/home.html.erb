@@ -22,9 +22,18 @@
         <div class="col-sm-4">
           <div class="container-fluid text-center"> <a href="/workouts/<%=workout.id%>"> <%=workout.name%><br>
             <!--I know I can do <%= link_to workout.name, workout_path(workout) %> but I want image to be wrapped link too-->
+<<<<<<< HEAD
             <p><%= workout.views %> Views</p>
             <img src="<%=workout.photo%>" width="150" height="120" alt="Image"><br></a>
             <%=workout.training_type_name%> || <%=workout.duration%> Minutes </div>
+=======
+          <img src="<%=workout.photo%>" width="150" height="120" alt="Image"><br></a>
+<<<<<<< HEAD
+          <%=workout.training_type_name%> || <%= workout.views %> Views</div>
+=======
+          <%=workout.training_type_name%> || <%=workout.duration%> Minutes || <%= workout.views %></div>
+>>>>>>> dc6ebca811141ac2a8db0b9465ff221c31a421b9
+>>>>>>> 6a95653631706531f2df11bbecea9212467c4674
           <br>
           <br>
         </div>

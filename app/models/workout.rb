@@ -73,6 +73,17 @@ class Workout < ActiveRecord::Base
     all.order(views: :DESC).limit(3)
   end
 
+<<<<<<< HEAD
+=======
+  def self.longest
+    all.order(duration: :desc).limit(1)
+  end
+
+  def self.shortest
+    order(duration: :ASC).limit(1)
+  end
+
+>>>>>>> dc6ebca811141ac2a8db0b9465ff221c31a421b9
   def assign_photo(training_type)
     case training_type
       when "HIIT"
